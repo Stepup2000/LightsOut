@@ -35,8 +35,8 @@ public class Collision : MonoBehaviour
 
     private void deactivateLight()
     {
+        setRandomLightCooldown();
         _lightBulb.gameObject.GetComponent<Renderer>().enabled = false;
-        _respawnTimer = _respawnCooldown;
         _lightTracker.activeLights -= 1;
     }
 

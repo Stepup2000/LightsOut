@@ -1,39 +1,32 @@
 using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TrafficLightController : MonoBehaviour
 {
-    public TrafficLight[] trafficLightTargets;
+    public List<TrafficLight> trafficLightTargets;
+
+    [SerializeField] private float _lightSpawnCooldown = 10;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        trafficLightTargets = FindObjectsOfType<TrafficLight>().ToList();
+        InvokeRepeating("turnRandomLightOn", _lightSpawnCooldown, _lightSpawnCooldown);
     }
 
-    private bool checkActiveLights()
+    private void turnRandomLightOn()
     {
-        bool found = false;
-        if (trafficLightTargets.Length != 0)
         {
-            int trafficLightCount = trafficLightTargets.Length;
-            for (int i = 0; i < trafficLightCount; i++)
+            List<TrafficLight> idleTrafficLights = trafficLightTargets.FindAll((light) => !light.lightState);
+            if (idleTrafficLights.Count > 0)
             {
-                if (trafficLightTargets[i].lightState == false)
-                {
-                    {
-                        found = true;
-                    }
-                }
+                int randomNumber = Random.Range(0, idleTrafficLights.Count);
+                idleTrafficLights[randomNumber].lightState = true;
+                Debug.Log("Light turned on");
             }
         }
-        return found;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        checkActiveLights();
-    }
 }

@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 82904051}
   - component: {fileID: 82904050}
   m_Layer: 0
-  m_Name: Sun
+  m_Name: Directional Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -380,7 +380,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -518,6 +518,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 395788251}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &180339568 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7965201692283262226, guid: ddd80750f415cd9459098749f6128fe8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2033034947}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b398784eaa25ebe4488c7fcc708e9e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &225967656 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6228323533558506152, guid: d104b4d9640371d4daa8de37eaefb14d,
@@ -530,6 +542,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2033034947}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &270358967 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7965201692283262226, guid: ddd80750f415cd9459098749f6128fe8,
+    type: 3}
+  m_PrefabInstance: {fileID: 92693616}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b398784eaa25ebe4488c7fcc708e9e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &322930921 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7965201692283262239, guid: ddd80750f415cd9459098749f6128fe8,
@@ -770,6 +794,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1890402852}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &425532387 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7965201692283262226, guid: ddd80750f415cd9459098749f6128fe8,
+    type: 3}
+  m_PrefabInstance: {fileID: 370790627}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b398784eaa25ebe4488c7fcc708e9e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &488183581 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6228323533558506152, guid: d104b4d9640371d4daa8de37eaefb14d,
@@ -1240,6 +1276,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1866958610}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &758497532 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7965201692283262226, guid: ddd80750f415cd9459098749f6128fe8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1471921129}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b398784eaa25ebe4488c7fcc708e9e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &861537648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1370,6 +1418,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trafficLightTargets:
   - {fileID: 1007318760}
+  - {fileID: 758497532}
+  - {fileID: 180339568}
+  - {fileID: 1768558585}
+  - {fileID: 270358967}
+  - {fileID: 2004557173}
+  - {fileID: 1741654108}
+  - {fileID: 425532387}
+  - {fileID: 1217352620}
+  - {fileID: 1442314686}
   _lightSpawnCooldown: 10
 --- !u!4 &1075971772
 Transform:
@@ -1454,6 +1511,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d104b4d9640371d4daa8de37eaefb14d, type: 3}
+--- !u!114 &1217352620 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7965201692283262226, guid: ddd80750f415cd9459098749f6128fe8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1667119579}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b398784eaa25ebe4488c7fcc708e9e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1254402740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1561,6 +1630,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1442314686 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7965201692283262226, guid: ddd80750f415cd9459098749f6128fe8,
+    type: 3}
+  m_PrefabInstance: {fileID: 395788251}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b398784eaa25ebe4488c7fcc708e9e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1466398298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,15 +1711,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466398298}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 5.55, y: -0.44187766, z: -4.11}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.1450148, y: -0.44187766, z: 1.5189207}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 48534595}
   - {fileID: 569906993}
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1471921129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1646,6 +1727,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1971651608}
     m_Modifications:
+    - target: {fileID: 7965201692283262226, guid: ddd80750f415cd9459098749f6128fe8,
+        type: 3}
+      propertyPath: lightState
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7965201692283262236, guid: ddd80750f415cd9459098749f6128fe8,
         type: 3}
       propertyPath: _lightTracker
@@ -1874,6 +1960,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddd80750f415cd9459098749f6128fe8, type: 3}
+--- !u!114 &1741654108 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7965201692283262226, guid: ddd80750f415cd9459098749f6128fe8,
+    type: 3}
+  m_PrefabInstance: {fileID: 370469419}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b398784eaa25ebe4488c7fcc708e9e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1768558585 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7965201692283262226, guid: ddd80750f415cd9459098749f6128fe8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1866958610}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b398784eaa25ebe4488c7fcc708e9e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1791653746 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7965201692283262239, guid: ddd80750f415cd9459098749f6128fe8,
@@ -2354,51 +2464,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeLights: 0
   activeLightLimit: 10
---- !u!1 &1757475254
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1757475256}
-  - component: {fileID: 1757475255}
-  m_Layer: 0
-  m_Name: TrafficLightController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1757475255
+--- !u!114 &2004557173 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7965201692283262226, guid: ddd80750f415cd9459098749f6128fe8,
+    type: 3}
+  m_PrefabInstance: {fileID: 76041334}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1757475254}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bb3d7e6aee4f224ab6b10588bb3215a, type: 3}
+  m_Script: {fileID: 11500000, guid: b398784eaa25ebe4488c7fcc708e9e97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trafficLightTargets:
-  - {fileID: 0}
---- !u!4 &1757475256
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1757475254}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.056905, y: -0.9488058, z: -0.88525957}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2026521011 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6228323533558506152, guid: d104b4d9640371d4daa8de37eaefb14d,
@@ -2738,6 +2815,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1971651608}
     m_Modifications:
+    - target: {fileID: 7965201692283262226, guid: ddd80750f415cd9459098749f6128fe8,
+        type: 3}
+      propertyPath: lightState
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7965201692283262236, guid: ddd80750f415cd9459098749f6128fe8,
         type: 3}
       propertyPath: _lightTracker
@@ -2803,5 +2885,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7965201692283262236, guid: ddd80750f415cd9459098749f6128fe8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ddd80750f415cd9459098749f6128fe8, type: 3}
