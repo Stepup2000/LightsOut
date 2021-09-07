@@ -42,14 +42,12 @@ public class Collision : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        {
             if (other.gameObject.CompareTag("Player"))
             {
                 _lightBulb.gameObject.GetComponent<Renderer>().enabled = false;
                 _respawnTimer = _respawnCooldown;
                 _lightTracker.activeLights -= 1;
             }
-        }
     }
 
     // Update is called once per frame
