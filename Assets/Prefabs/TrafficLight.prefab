@@ -232,7 +232,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7965201692283262239}
   - component: {fileID: 7965201692283262237}
-  - component: {fileID: 7965201692283262236}
   - component: {fileID: 7965201692283262226}
   m_Layer: 0
   m_Name: TrafficLight
@@ -269,21 +268,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.6781366
   m_Center: {x: 0, y: 2.07, z: 0}
---- !u!114 &7965201692283262236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7965201692283262238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac98637cd08b9f54f91593c9d7dda6fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _respawnCooldown: 5
-  _lightTracker: {fileID: 0}
-  _lightBulb: {fileID: 7965201691394148072}
 --- !u!114 &7965201692283262226
 MonoBehaviour:
   m_ObjectHideFlags: 0
