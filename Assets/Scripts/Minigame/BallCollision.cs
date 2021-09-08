@@ -12,16 +12,19 @@ public class BallCollision : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject);
         if (other.gameObject.CompareTag("MiniGameCollider"))
         {
-            Destroy(gameObject);
-        }
-    }
+            MinigameCollider controller = other.gameObject.GetComponent<MinigameCollider>();
+            if (controller.direction == "Up")
+            {
+                gameObject.GetComponent<BallMovement>().direction = Vector3.up;
+            }
 
-    private void OnCollisionEnter(UnityEngine.Collision collision)
-    {
-        Debug.Log(collision.gameObject);
+            if (controller.direction == "Down")
+            {
+                gameObject.GetComponent<BallMovement>().direction = Vector3.down;
+            }
+        }
     }
 
     // Update is called once per frame

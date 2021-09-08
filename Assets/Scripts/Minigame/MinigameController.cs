@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class MinigameController : MonoBehaviour
 {
-    [SerializeField] private int _timeStartingAmount;
-    [SerializeField] private int _timePenaltyAmount;
+    [SerializeField] private int _lightsRequiredStartingAmount;
+    [SerializeField] private int _lightsRequired;
+    [SerializeField] private int _lightsRequiredPenalty;
     [SerializeField] private int _ballSpawnCooldown;
     [SerializeField] private int _ballSpeed;
+
     [SerializeField] private BallMovement _ballInstance;
     [SerializeField] private GameObject _ballSpawnLocator;
+
     private Vector3 _ballSpawnPoint;
+
     // Start is called before the first frame update
     void Start()
     {
