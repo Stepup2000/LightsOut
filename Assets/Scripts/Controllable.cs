@@ -32,22 +32,6 @@ public class Controllable : MonoBehaviour
         }
     }
 
-    //Move up/down
-    private void YMovement()
-    {
-        if (Input.GetKey("space"))
-        {
-            Vector3 Movement = new Vector3(0, 1, 0);
-            _rigidbody.AddForce(Movement * _speed * Time.deltaTime, ForceMode.Acceleration);
-        }
-
-        if (Input.GetKey("left shift"))
-        {
-            Vector3 Movement = new Vector3(0, -1, 0);
-            _rigidbody.AddForce(Movement * _speed * Time.deltaTime, ForceMode.Acceleration);
-        }
-    }
-
     //Rotate UFO right/left
     private void rotate()
     {
@@ -66,7 +50,6 @@ public class Controllable : MonoBehaviour
     void Update()
     {
         XZMovement();
-        YMovement();
         rotate();
     }
 }

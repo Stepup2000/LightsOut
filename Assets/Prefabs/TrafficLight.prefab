@@ -266,8 +266,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.6781366
-  m_Center: {x: 0, y: 2.07, z: 0}
+  m_Radius: 2
+  m_Center: {x: 0, y: 0.42, z: 0}
 --- !u!114 &7965201692283262226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,4 +280,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b398784eaa25ebe4488c7fcc708e9e97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _minigameControllerPrefab: {fileID: 484216369805510011, guid: 46498ba3e136e4d4b8709e339d9ae04e,
+    type: 3}
   lightState: 0

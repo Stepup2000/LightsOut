@@ -5,6 +5,7 @@ using UnityEngine;
 public class BallMovement : MonoBehaviour
 {
     [SerializeField] private float _speed;
+    [SerializeField]
     public Vector3 direction = Vector3.right;
     // Start is called before the first frame update
     void Start()
