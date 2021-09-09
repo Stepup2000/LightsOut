@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class MinigameController : MonoBehaviour
 {
-    [SerializeField] private int _lightsRequiredStartingAmount;
-    [SerializeField] private int _lightsRequired;
-    [SerializeField] private int _lightsRequiredPenalty;
-    [SerializeField] private int _ballSpawnCooldown;
-    [SerializeField] private int _ballSpeed;
+    [SerializeField] private int _lightsRequiredStartingAmount = 30;
+    [SerializeField] private int _lightsRequired = 30;
+    [SerializeField] private int _lightsRequiredPenalty = 2;
+
+    [SerializeField] private float _ballSpawnCooldown = 1;
+    [SerializeField] private float _ballSpeed = 1;
 
     [SerializeField] private BallMovement _ballInstance;
     [SerializeField] private GameObject _ballSpawnLocator;
@@ -28,9 +29,19 @@ public class MinigameController : MonoBehaviour
         ball.SetSpeed(_ballSpeed);
     }
 
+    public void LowerRequiredLights()
+    {
+        _lightsRequired -= 1;
+    }
+
+    public void AddRequiredLightsPenalty()
+    {
+        _lightsRequired += _lightsRequiredPenalty;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

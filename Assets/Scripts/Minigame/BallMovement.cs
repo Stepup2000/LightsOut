@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class BallMovement : MonoBehaviour
 {
-    [SerializeField] private int _speed;
+    [SerializeField] private float _speed;
     public Vector3 direction = Vector3.right;
     // Start is called before the first frame update
     void Start()
     {
     }
 
-    public void SetSpeed(int pSpeed)
+    public void SetSpeed(float pSpeed)
     {
         _speed = pSpeed;
     }
