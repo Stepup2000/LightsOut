@@ -21,20 +21,20 @@ public class MouseClick : MonoBehaviour
 
     private void getMouseClick()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Debug.Log(Camera.main);
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
-            {
-                //Select stage    
-                if (hit.transform.name == transform.name)
-                {
-                    NewMethod();
-                }
-            }
-        }
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    Debug.Log(Camera.main);
+        //    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        //    RaycastHit hit;
+        //    if (Physics.Raycast(ray, out hit))
+        //    {
+        //        //Select stage    
+        //        if (hit.transform.name == transform.name)
+        //        {
+        //            NewMethod();
+        //        }
+        //    }
+        //}
     }
 
     public void NewMethod()
