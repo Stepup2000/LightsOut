@@ -215,14 +215,14 @@ MonoBehaviour:
   m_AdvancedMode: 0
   mode:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 1
   gaussianStart:
-    m_OverrideState: 0
-    m_Value: 10
+    m_OverrideState: 1
+    m_Value: 15
     min: 0
   gaussianEnd:
-    m_OverrideState: 0
-    m_Value: 30
+    m_OverrideState: 1
+    m_Value: 100
     min: 0
   gaussianMaxRadius:
     m_OverrideState: 0
@@ -243,7 +243,7 @@ MonoBehaviour:
     max: 32
   focalLength:
     m_OverrideState: 1
-    m_Value: 115
+    m_Value: 127
     min: 1
     max: 300
   bladeCount:
@@ -277,11 +277,11 @@ MonoBehaviour:
   m_AdvancedMode: 0
   threshold:
     m_OverrideState: 1
-    m_Value: 0.93
+    m_Value: 0.81
     min: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 1.38
+    m_Value: 2
     min: 0
   scatter:
     m_OverrideState: 0
@@ -294,7 +294,7 @@ MonoBehaviour:
     min: 0
   tint:
     m_OverrideState: 1
-    m_Value: {r: 0.2216981, g: 1, b: 0.91094065, a: 1}
+    m_Value: {r: 0.31706125, g: 0.8962264, b: 0.86115825, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
@@ -352,13 +352,13 @@ MonoBehaviour:
   m_AdvancedMode: 0
   shadows:
     m_OverrideState: 1
-    m_Value: {x: 0.9256603, y: 0.93638974, z: 1, w: 0}
+    m_Value: {x: 0.97611934, y: 0.78505117, z: 1, w: 0}
   midtones:
     m_OverrideState: 1
     m_Value: {x: 0.95049614, y: 1, z: 0.87135595, w: 0}
   highlights:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.9355891, z: 0.8156575, w: 0}
+    m_Value: {x: 0.9707952, y: 1, z: 0.6053386, w: 0}
   shadowsStart:
     m_OverrideState: 0
     m_Value: 0
