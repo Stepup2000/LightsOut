@@ -5734,7 +5734,7 @@ PrefabInstance:
     - target: {fileID: 6303472310437891379, guid: 86682cb68a6b66746acde55e954e3bae,
         type: 3}
       propertyPath: lightState
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6484947044771178007, guid: 86682cb68a6b66746acde55e954e3bae,
         type: 3}

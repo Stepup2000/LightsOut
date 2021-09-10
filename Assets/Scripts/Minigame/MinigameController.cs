@@ -28,6 +28,11 @@ public class MinigameController : MonoBehaviour
     void Start()
     {
         InvokeRepeating("SpawnBall", _ballSpawnCooldown, _ballSpawnCooldown);
+        SetTargets();
+    }
+
+    private void SetTargets()
+    {
         _ballSpawnPoint = _ballSpawnLocator.transform.position;
         _lightsRequired = _lightsRequiredStartingAmount;
         _myPlayer = GameObject.FindGameObjectsWithTag("Player")[0].GetComponent<Player>();
