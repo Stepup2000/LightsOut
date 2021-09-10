@@ -70,7 +70,6 @@ public class MinigameController : MonoBehaviour
     {
         if (_lightsRequired <= 0 && _targetTrafficLight != null)
         {
-            Debug.Log("turned off light");
             _targetTrafficLight.SwitchLight();
             _myPlayer.SwitchMinigame(false);
         }
