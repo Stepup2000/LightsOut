@@ -9,33 +9,11 @@ public class MouseClick : MonoBehaviour
     
     // Start is called before the first frame update
 
-    private void OnMouseDown()
-    {
-        minigameCollider.direction = _direction;
-    }
-
     private void OnDisable()
     {
         gameObject.SetActive(false);
     }
 
-    private void getMouseClick()
-    {
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    Debug.Log(Camera.main);
-        //    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        //    RaycastHit hit;
-        //    if (Physics.Raycast(ray, out hit))
-        //    {
-        //        //Select stage    
-        //        if (hit.transform.name == transform.name)
-        //        {
-        //            NewMethod();
-        //        }
-        //    }
-        //}
-    }
 
     public void NewMethod()
     {
@@ -44,6 +22,5 @@ public class MouseClick : MonoBehaviour
 
     private void Update()
     {
-        getMouseClick();
     }
 }

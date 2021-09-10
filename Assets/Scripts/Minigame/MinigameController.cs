@@ -22,6 +22,7 @@ public class MinigameController : MonoBehaviour
     private Vector3 _ballSpawnPoint;
 
     private TrafficLight _targetTrafficLight;
+    private Player _myPlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +30,8 @@ public class MinigameController : MonoBehaviour
         InvokeRepeating("SpawnBall", _ballSpawnCooldown, _ballSpawnCooldown);
         _ballSpawnPoint = _ballSpawnLocator.transform.position;
         _lightsRequired = _lightsRequiredStartingAmount;
-}
+        _myPlayer = GameObject.FindGameObjectsWithTag("Player")[0].GetComponent<Player>();
+    }
 
     private void SpawnBall()
     {
@@ -61,9 +63,10 @@ public class MinigameController : MonoBehaviour
 
     private void checkForCompletion()
     {
-        if (_lightsRequired < 0)
+        if (_lightsRequired <= 0 && _targetTrafficLight != null)
         {
-            Destroy(gameObject);
+            _targetTrafficLight.lightState = false;
+            _myPlayer.SwitchMinigame(false);
         }
     }
 
@@ -75,6 +78,7 @@ public class MinigameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(_targetTrafficLight.lightState);
         DisplayRequiredLightsText();
         checkForCompletion();
     }
