@@ -33,6 +33,11 @@ public class MinigameController : MonoBehaviour
         _myPlayer = GameObject.FindGameObjectsWithTag("Player")[0].GetComponent<Player>();
     }
 
+    private void OnDisable()
+    {
+        _lightsRequired = _lightsRequiredMaximumAmount;
+    }
+
     private void SpawnBall()
     {
         var ball = Instantiate<BallMovement>(_ballInstance, _ballSpawnPoint, Quaternion.identity);
@@ -65,7 +70,8 @@ public class MinigameController : MonoBehaviour
     {
         if (_lightsRequired <= 0 && _targetTrafficLight != null)
         {
-            _targetTrafficLight.lightState = false;
+            Debug.Log("turned off light");
+            _targetTrafficLight.SwitchLight();
             _myPlayer.SwitchMinigame(false);
         }
     }
@@ -78,7 +84,6 @@ public class MinigameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(_targetTrafficLight.lightState);
         DisplayRequiredLightsText();
         checkForCompletion();
     }
