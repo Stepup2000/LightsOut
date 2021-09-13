@@ -4,13 +4,24 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    //Create variables
-    [SerializeField] public int speed;
-    [SerializeField] public float rotationSpeed;
+    [SerializeField] private List<GameObject> _minigameElements;
+
+    private void Start()
+    {
+        SwitchMinigame(false);
+    }
+
+    public void SwitchMinigame(bool onOrOff)
+    {
+        for (int i = 0; i < _minigameElements.Count; i++)
+        {
+            _minigameElements[i].gameObject.SetActive(onOrOff);
+            
+        }
+    }
 
     // Update is called once per frame
     void Update()
     {
-
     }
 }

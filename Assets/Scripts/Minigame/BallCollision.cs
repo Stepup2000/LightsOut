@@ -9,7 +9,18 @@ public class BallCollision : MonoBehaviour
 
     private void Start()
     {
-        minigameController = GameObject.FindGameObjectsWithTag("MinigameController")[0].GetComponent<MinigameController>();
+        SetMiniGameControllerTarget();
+    }
+
+    private void SetMiniGameControllerTarget()
+    {
+        GameObject[] allBalls;
+        allBalls = GameObject.FindGameObjectsWithTag("MinigameController");
+        if (allBalls.Length > 0)
+        {
+            minigameController = GameObject.FindGameObjectsWithTag("MinigameController")[0].GetComponent<MinigameController>();
+        }
+        else Destroy(gameObject);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -75,6 +86,6 @@ public class BallCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (minigameController.gameObject.activeSelf == false) Destroy(gameObject);
     }
 }

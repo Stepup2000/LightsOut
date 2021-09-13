@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8562460807131942409}
   - component: {fileID: 3153338603751460205}
   - component: {fileID: -2672773618640145599}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 1
+  direction: {x: -1, y: 0, z: 0}
 --- !u!114 &8562460807131942409
 MonoBehaviour:
   m_ObjectHideFlags: 0

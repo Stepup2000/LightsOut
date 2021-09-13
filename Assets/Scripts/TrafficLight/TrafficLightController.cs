@@ -23,8 +23,7 @@ public class TrafficLightController : MonoBehaviour
             if (idleTrafficLights.Count > 0)
             {
                 int randomNumber = Random.Range(0, idleTrafficLights.Count);
-                idleTrafficLights[randomNumber].lightState = true;
-                Debug.Log("Light turned on");
+                idleTrafficLights[randomNumber].SwitchLight();
             }
         }
     }
