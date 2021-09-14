@@ -1366,6 +1366,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03e51914bc2009047bb12932e3699e9e, type: 3}
 --- !u!4 &239001616 stripped
@@ -14320,6 +14340,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03e51914bc2009047bb12932e3699e9e, type: 3}
 --- !u!4 &667279299 stripped
@@ -18592,6 +18632,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03e51914bc2009047bb12932e3699e9e, type: 3}
 --- !u!4 &1265917633 stripped
@@ -22863,6 +22923,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03e51914bc2009047bb12932e3699e9e, type: 3}
 --- !u!4 &1859048828 stripped
@@ -23359,6 +23439,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03e51914bc2009047bb12932e3699e9e, type: 3}
@@ -25590,6 +25690,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967220193536164071, guid: 03e51914bc2009047bb12932e3699e9e,
+        type: 3}
+      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03e51914bc2009047bb12932e3699e9e, type: 3}
