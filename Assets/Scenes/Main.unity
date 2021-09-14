@@ -1319,7 +1319,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 66a67d84a58bba44aa2448d4428c7f91,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 96.88
+      value: 99.688
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66a67d84a58bba44aa2448d4428c7f91,
         type: 3}
@@ -2909,7 +2909,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -17858,7 +17858,7 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9725491, g: 0.9960785, b: 0.63529414, a: 1}
   m_Intensity: 100
   m_Range: 10
   m_SpotAngle: 44.867386
@@ -21310,7 +21310,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 59b2ecda8b75b5c4faa157a8761765c9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 39.08489
+      value: 36.364
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59b2ecda8b75b5c4faa157a8761765c9,
         type: 3}
