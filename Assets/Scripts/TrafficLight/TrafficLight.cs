@@ -15,7 +15,7 @@ public class TrafficLight : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
 
-        if (other.gameObject.CompareTag("Player") && Input.GetKey("space") && lightState == true)
+        if (other.gameObject.CompareTag("Player") && Input.GetKey("e") && lightState == true)
         {
             Debug.Log(gameObject.name);
             Player myPlayer = other.gameObject.GetComponent<Player>();

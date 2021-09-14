@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
         if (closestStreetLight != null)
         {
             float distanceToTarget = Vector3.Distance(transform.position, closestStreetLight.transform.position);
-            if (distanceToTarget < maxRange) _pressE.text = "Press E to interact";
+            if (distanceToTarget < maxRange) _pressE.text = "Press E to interact with the streetlight";
             else _pressE.text = "";
         }
     }
