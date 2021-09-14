@@ -23,7 +23,6 @@ public class Player : MonoBehaviour
         for (int i = 0; i < _minigameElements.Count; i++)
         {
             _minigameElements[i].gameObject.SetActive(onOrOff);
-            
         }
     }
 
