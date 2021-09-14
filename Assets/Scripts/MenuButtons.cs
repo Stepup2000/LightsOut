@@ -17,7 +17,7 @@ public class MenuButtons : MonoBehaviour
 
     public static void GoToMenu()
     {
-        SceneManager.LoadScene("Menu", LoadSceneMode.Single);
+        SceneManager.LoadScene("Main", LoadSceneMode.Single);
     }
 
     public static void QuitGame()
