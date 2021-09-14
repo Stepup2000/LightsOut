@@ -17134,7 +17134,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press e to interact with the streetlight
+  m_Text: Press e to interact
 --- !u!222 &1079600699
 CanvasRenderer:
   m_ObjectHideFlags: 0
