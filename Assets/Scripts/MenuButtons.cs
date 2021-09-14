@@ -12,12 +12,12 @@ public class MenuButtons : MonoBehaviour
     }
     public static void StartGame()
     {
-        SceneManager.LoadScene("City", LoadSceneMode.Single);
+        SceneManager.LoadScene("Main", LoadSceneMode.Single);
     }
 
     public static void GoToMenu()
     {
-        SceneManager.LoadScene("Main", LoadSceneMode.Single);
+        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 
     public static void QuitGame()

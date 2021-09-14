@@ -8,6 +8,7 @@ public class TrafficLightController : MonoBehaviour
     public List<TrafficLight> trafficLightTargets;
 
     [SerializeField] private float _lightSpawnCooldown = 10;
+    [SerializeField] private float _loseConditionAddition = 2;
 
     // Start is called before the first frame update
     private void Start()
@@ -27,5 +28,20 @@ public class TrafficLightController : MonoBehaviour
             }
         }
     }
+
+    private void WinAndLoseCondition()
+    {
+        List<TrafficLight> idleTrafficLights = trafficLightTargets.FindAll((light) => !light.lightState);
+        if (idleTrafficLights.Count >= trafficLightTargets.Count - _loseConditionAddition)
+        {
+            //Win Condition
+        }
+
+        if (idleTrafficLights.Count <= 0)
+        {
+            //Win Condition
+        }
+    }
+
 
 }
