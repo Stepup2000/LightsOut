@@ -48,7 +48,7 @@ Light:
   m_Intensity: 100
   m_Range: 10
   m_SpotAngle: 72.92244
-  m_InnerSpotAngle: 48.778564
+  m_InnerSpotAngle: 51.97856
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
