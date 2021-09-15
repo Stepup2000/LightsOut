@@ -40,6 +40,5 @@ public class Frog : MonoBehaviour
     {
         changeMood();
         EmitParticles();
-        Debug.Log(happy);
     }
 }
