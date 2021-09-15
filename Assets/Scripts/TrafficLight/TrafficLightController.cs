@@ -7,15 +7,17 @@ public class TrafficLightController : MonoBehaviour
 {
     public List<TrafficLight> trafficLightTargets;
 
-    [SerializeField] private float _lightSpawnCooldown = 120;
+    [SerializeField] private float _lightSpawnCooldown = 90;
     [SerializeField] private int _activeLightsStartingAmount = 12;
-    private float _happinessScore = 50;
+    public float happinessScore = 100;
+    private float _maxScore = 200;
 
     // Start is called before the first frame update
     private void Start()
     {
         trafficLightTargets = FindObjectsOfType<TrafficLight>().ToList();
         InvokeRepeating("turnRandomLightOn", _lightSpawnCooldown, _lightSpawnCooldown);
+        InvokeRepeating("ChangeScore", 1, 1);
         for (int i = 1; i < _activeLightsStartingAmount; i++)
         {
            turnRandomLightOn();
@@ -39,28 +41,28 @@ public class TrafficLightController : MonoBehaviour
         if (idleTrafficLights.Count < halfOfStreetlightAmount)
         {
             float score = 1 +((halfOfStreetlightAmount - idleTrafficLights.Count) / 10);
-            _happinessScore += score;
-            Debug.Log(score);
+            happinessScore -= score*0.5f;
+            Debug.Log(happinessScore);
         }
 
         if (idleTrafficLights.Count > halfOfStreetlightAmount)
         {
             float score = -1 + ((halfOfStreetlightAmount - idleTrafficLights.Count) / 10);
-            _happinessScore += score;
-            Debug.Log(score);
+            happinessScore -= score * 0.5f;
+            Debug.Log(happinessScore);
         }
     }
 
     private void WinAndLoseCondition()
     {
         List<TrafficLight> idleTrafficLights = trafficLightTargets.FindAll((light) => !light.lightState);
-        if (_happinessScore >= 100)
+        if (happinessScore >= _maxScore)
         {
             //Win Condition
             Debug.Log("Win");
         }
 
-        if (_happinessScore <= 0)
+        if (happinessScore <= 0)
         {
             //Win Condition
             Debug.Log("Lose");
@@ -69,7 +71,6 @@ public class TrafficLightController : MonoBehaviour
 
     private void Update()
     {
-        //WinAndLoseCondition();
-        ChangeScore();
+        WinAndLoseCondition();
     }
 }
