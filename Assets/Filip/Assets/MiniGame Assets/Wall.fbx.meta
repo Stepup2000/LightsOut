@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 69a45075f92c54c47aac9f1cf0158c66
+guid: d2c67de5b7f780b45923bef430afe201
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -7,18 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Button_Blue
-    second: {fileID: 2100000, guid: 6cc93d5d0c71f924f9b220258ae8fb2f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Button_Orange
-    second: {fileID: 2100000, guid: 74b2cce51b11b0d4da267b647dc80cff, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Wall
-    second: {fileID: 2100000, guid: 0b22649943fbab34aa0cf1c1e78b4656, type: 2}
+      name: Wall1
+    second: {fileID: 2100000, guid: f4f807cc79ba86a48b7ebd4178a42fba, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
