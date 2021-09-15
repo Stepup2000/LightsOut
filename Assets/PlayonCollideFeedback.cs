@@ -28,7 +28,7 @@ public class PlayonCollideFeedback : MonoBehaviour
 
     private void OnTriggerEnter(UnityEngine.Collider other)
     {
-        Debug.Log("here");
+        //Debug.Log("here");
         BallColor ballColorComponent = other.gameObject.GetComponent<BallColor>();
         Color currentColor = ballColorComponent.myColor;
         Color orange = new Color(1.0f, 0.5f, 0.0f);
