@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BallCollision : MonoBehaviour
 {
@@ -11,6 +12,11 @@ public class BallCollision : MonoBehaviour
     {
         SetMiniGameControllerTarget();
     }
+
+    [SerializeField]
+    private UnityEvent positive;
+    [SerializeField]
+    private UnityEvent negative;
 
     private void SetMiniGameControllerTarget()
     {
@@ -55,6 +61,9 @@ public class BallCollision : MonoBehaviour
             {
                 minigameController.LowerRequiredLights();
                 Destroy(gameObject);
+
+                // positive feedback sfx
+                positive.Invoke();
             }
 
             Color orange = new Color(1.0f, 0.5f, 0.0f);
@@ -62,6 +71,9 @@ public class BallCollision : MonoBehaviour
             {
                 minigameController.AddRequiredLightsPenalty();
                 Destroy(gameObject);
+
+                // negative feedback sfx
+                negative.Invoke();
             }
         }
 
@@ -71,6 +83,9 @@ public class BallCollision : MonoBehaviour
             {
                 minigameController.AddRequiredLightsPenalty();
                 Destroy(gameObject);
+
+                // negative feedback sfx
+                negative.Invoke();
             }
 
             Color orange = new Color(1.0f, 0.5f, 0.0f);
@@ -78,6 +93,9 @@ public class BallCollision : MonoBehaviour
             {
                 minigameController.LowerRequiredLights();
                 Destroy(gameObject);
+
+                // positive feedback sfx
+                positive.Invoke();
             }
         }
 
