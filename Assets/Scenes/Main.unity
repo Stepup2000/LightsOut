@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.022081286, g: 0.023066899, b: 0.055274617, a: 1}
+  m_IndirectSpecularColor: {r: 0.021831084, g: 0.022930324, b: 0.05490503, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -130,6 +130,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 253283741}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &18536021 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5882178590422111706, guid: 3657d58fceb465440b2ec12d322e2662,
+    type: 3}
+  m_PrefabInstance: {fileID: 1179486465810982229}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &21324947 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5652420187807288706, guid: c46a70b8646dae941891506c85259814,
@@ -183,7 +189,7 @@ Transform:
   - {fileID: 1693205666}
   - {fileID: 1914408194}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &29202548
 PrefabInstance:
@@ -1292,7 +1298,7 @@ Transform:
   - {fileID: 476327782}
   - {fileID: 447992566}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &239001615
 PrefabInstance:
@@ -1638,7 +1644,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0c797de6042014e4fb4af349dbac94a8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0c797de6042014e4fb4af349dbac94a8,
         type: 3}
@@ -13598,6 +13604,7 @@ Transform:
   - {fileID: 63968926}
   - {fileID: 976963917}
   - {fileID: 1719334452}
+  - {fileID: 18536021}
   m_Father: {fileID: 1615124173}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13615,7 +13622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trafficLightTargets: []
   _lightSpawnCooldown: 120
-  _loseConditionAddition: 2
+  _activeLightsStartingAmount: 12
 --- !u!1001 &613602230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14614,7 +14621,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &683891911
 PrefabInstance:
@@ -16735,7 +16742,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &990948421
 PrefabInstance:
@@ -18964,7 +18971,7 @@ PrefabInstance:
     - target: {fileID: 8546500881596663951, guid: 36a29104489349145a5547ad98400ff7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8546500881596663951, guid: 36a29104489349145a5547ad98400ff7,
         type: 3}
@@ -19378,7 +19385,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1329008891
 GameObject:
@@ -19887,7 +19894,7 @@ RectTransform:
   m_Children:
   - {fileID: 1079600697}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -21715,7 +21722,7 @@ Transform:
   - {fileID: 1749074849}
   - {fileID: 1505013352}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1616005345 stripped
 Transform:
@@ -22084,7 +22091,7 @@ Transform:
   - {fileID: 1859048828}
   - {fileID: 667279299}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1684415669
 GameObject:
@@ -22180,7 +22187,7 @@ Transform:
   m_LocalScale: {x: 1.5571299, y: 0.2, z: 1.6395495}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1693205665
 PrefabInstance:
@@ -25485,7 +25492,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 594855582}
     m_Modifications:
     - target: {fileID: 1355869374602833073, guid: 3657d58fceb465440b2ec12d322e2662,
         type: 3}
@@ -25570,7 +25577,7 @@ PrefabInstance:
     - target: {fileID: 5882178590422111706, guid: 3657d58fceb465440b2ec12d322e2662,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 5882178590422111706, guid: 3657d58fceb465440b2ec12d322e2662,
         type: 3}
@@ -25626,6 +25633,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ProjectorLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847462756902534493, guid: 3657d58fceb465440b2ec12d322e2662,
+        type: 3}
+      propertyPath: lightState
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3657d58fceb465440b2ec12d322e2662, type: 3}

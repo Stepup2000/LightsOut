@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b398784eaa25ebe4488c7fcc708e9e97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightState: 1
+  lightState: 0
 --- !u!135 &3717703653702135599
 SphereCollider:
   m_ObjectHideFlags: 0
