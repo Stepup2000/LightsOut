@@ -125,6 +125,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 877627aae7adb014fa05a877a199c6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  positive:
+    m_PersistentCalls:
+      m_Calls: []
+  negative:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &3153338603751460205
 MonoBehaviour:
   m_ObjectHideFlags: 0

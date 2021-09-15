@@ -8,19 +8,19 @@ public class MenuButtons : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
-    public static void StartGame()
+    public void StartGame()
     {
         SceneManager.LoadScene("Main", LoadSceneMode.Single);
     }
 
-    public static void GoToMenu()
+    public void GoToMenu()
     {
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 
-    public static void QuitGame()
+    public void QuitGame()
     {
         Application.Quit();
     }
@@ -28,6 +28,6 @@ public class MenuButtons : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
