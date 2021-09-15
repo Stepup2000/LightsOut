@@ -2,6 +2,7 @@ using System.Collections;
 using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TrafficLightController : MonoBehaviour
 {
@@ -42,14 +43,12 @@ public class TrafficLightController : MonoBehaviour
         {
             float score = 1 +((halfOfStreetlightAmount - idleTrafficLights.Count) / 10);
             happinessScore -= score*0.5f;
-            Debug.Log(happinessScore);
         }
 
         if (idleTrafficLights.Count > halfOfStreetlightAmount)
         {
             float score = -1 + ((halfOfStreetlightAmount - idleTrafficLights.Count) / 10);
             happinessScore -= score * 0.5f;
-            Debug.Log(happinessScore);
         }
     }
 
@@ -60,12 +59,13 @@ public class TrafficLightController : MonoBehaviour
         {
             //Win Condition
             Debug.Log("Win");
+            SceneManager.LoadScene("WinMenu", LoadSceneMode.Single);
         }
 
         if (happinessScore <= 0)
         {
             //Win Condition
-            Debug.Log("Lose");
+            SceneManager.LoadScene("LoseMenu", LoadSceneMode.Single);
         }
     }
 

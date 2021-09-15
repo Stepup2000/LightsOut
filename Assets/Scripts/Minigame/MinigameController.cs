@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class MinigameController : MonoBehaviour
 {
-    [SerializeField] private int _lightsRequiredStartingAmount = 30;
-    [SerializeField] private int _lightsRequiredMaximumAmount = 45;
+    [SerializeField] private int _lightsRequiredStartingAmount = 15;
+    [SerializeField] private int _lightsRequiredMaximumAmount = 30;
     [SerializeField] private int _lightsRequiredPenalty = 2;
 
     [SerializeField] private float _ballSpawnCooldown = 1;
@@ -40,7 +40,7 @@ public class MinigameController : MonoBehaviour
 
     private void OnDisable()
     {
-        _lightsRequired = _lightsRequiredMaximumAmount;
+        _lightsRequired = _lightsRequiredStartingAmount;
     }
 
     private void SpawnBall()
