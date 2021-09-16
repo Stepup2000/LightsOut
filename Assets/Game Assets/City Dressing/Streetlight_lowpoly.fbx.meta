@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Light
-    second: {fileID: 2100000, guid: a7944bde0a287b4498445d10c55af614, type: 2}
+    second: {fileID: 2100000, guid: 756d662165f18b64384f8a1c21534323, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

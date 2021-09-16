@@ -27,15 +27,17 @@ public class Frog : MonoBehaviour
     {
         if (happy == true)
         {
-            particleSytemHearts.gameObject.GetComponent<ParticleSystem>().Play();
-            //particleSytemAngryFace.gameObject.GetComponent<ParticleSystem>().Stop();
+            particleSytemAngryFace.gameObject.GetComponent<ParticleSystem>().Stop();
+            ParticleSystem particleSystem = particleSytemHearts.gameObject.GetComponent<ParticleSystem>();
+            if (particleSystem.emission.enabled == true) particleSystem.Play();
             Debug.Log("Stop");
         }
 
         if (happy == false)
         {
-            //particleSytemHearts.gameObject.GetComponent<ParticleSystem>().Stop();
-            particleSytemAngryFace.gameObject.GetComponent<ParticleSystem>().Play();
+            particleSytemHearts.gameObject.GetComponent<ParticleSystem>().Stop();
+            ParticleSystem particleSystem = particleSytemAngryFace.gameObject.GetComponent<ParticleSystem>();
+            if (particleSystem.emission.enabled == true) particleSystem.Play();
             Debug.Log("Play");
         }
 
