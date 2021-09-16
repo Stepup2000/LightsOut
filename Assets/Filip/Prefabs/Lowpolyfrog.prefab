@@ -125,12 +125,12 @@ GameObject:
   - component: {fileID: 7268963811085379700}
   - component: {fileID: 4492977935006556227}
   m_Layer: 0
-  m_Name: SadFaces
+  m_Name: ParticleSystemSadFace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3015265649329589316
 Transform:
   m_ObjectHideFlags: 0
@@ -153,7 +153,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3302334972495431979}
   serializedVersion: 7
-  lengthInSec: 5
+  lengthInSec: 3
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -4927,6 +4927,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4239604064674643582}
   - component: {fileID: 5967220193536164071}
+  - component: {fileID: 8092144676007184290}
   m_Layer: 0
   m_Name: Lowpolyfrog
   m_TagString: Untagged
@@ -5049,6 +5050,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8092144676007184290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575235521469457604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7803a8e69a53a8a45bafb5cfbdd0f311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSytemHearts: {fileID: 7724504947116805409}
+  particleSytemAngryFace: {fileID: 7268963811085379700}
+  happy: 0
 --- !u!1 &3819246758386914454
 GameObject:
   m_ObjectHideFlags: 0
@@ -5091,7 +5107,7 @@ GameObject:
   - component: {fileID: 7724504947116805409}
   - component: {fileID: 9049463092507845542}
   m_Layer: 0
-  m_Name: Hearts
+  m_Name: ParticleSystemHearts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5119,7 +5135,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5399875837010099763}
   serializedVersion: 7
-  lengthInSec: 5
+  lengthInSec: 3
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
