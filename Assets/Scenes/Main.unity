@@ -13594,8 +13594,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trafficLightTargets: []
   _lightSpawnCooldown: 90
-  _activeLightsStartingAmount: 12
-  happinessScore: 100
+  _activeLightsStartingAmount: 9
+  happinessScore: 10
 --- !u!1001 &613602230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19353,7 +19353,7 @@ PrefabInstance:
     - target: {fileID: 2034501737756272845, guid: 36a29104489349145a5547ad98400ff7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 58.5
+      value: 56.2
       objectReference: {fileID: 0}
     - target: {fileID: 2034501737756272845, guid: 36a29104489349145a5547ad98400ff7,
         type: 3}
@@ -19363,7 +19363,7 @@ PrefabInstance:
     - target: {fileID: 2034501737756272845, guid: 36a29104489349145a5547ad98400ff7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 102.8
+      value: 126.7
       objectReference: {fileID: 0}
     - target: {fileID: 2034501737757816525, guid: 36a29104489349145a5547ad98400ff7,
         type: 3}
@@ -19419,7 +19419,7 @@ PrefabInstance:
     - target: {fileID: 8546500881596663951, guid: 36a29104489349145a5547ad98400ff7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 8546500881596663951, guid: 36a29104489349145a5547ad98400ff7,
         type: 3}

@@ -14,6 +14,8 @@ public class Frog : MonoBehaviour
     void Start()
     {
         CheckForClosestLight();
+        particleSytemHearts.gameObject.GetComponent<ParticleSystem>().Stop();
+        particleSytemAngryFace.gameObject.GetComponent<ParticleSystem>().Stop();
     }
 
     private void changeMood()
@@ -26,13 +28,13 @@ public class Frog : MonoBehaviour
         if (happy == true)
         {
             particleSytemHearts.gameObject.GetComponent<ParticleSystem>().Play();
-            particleSytemAngryFace.gameObject.GetComponent<ParticleSystem>().Stop();
+            //particleSytemAngryFace.gameObject.GetComponent<ParticleSystem>().Stop();
             Debug.Log("Stop");
         }
 
         if (happy == false)
         {
-            particleSytemHearts.gameObject.GetComponent<ParticleSystem>().Stop();
+            //particleSytemHearts.gameObject.GetComponent<ParticleSystem>().Stop();
             particleSytemAngryFace.gameObject.GetComponent<ParticleSystem>().Play();
             Debug.Log("Play");
         }

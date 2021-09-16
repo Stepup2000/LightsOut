@@ -176,7 +176,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.48, y: -0.55, z: 0}
 --- !u!1 &1346408808786864339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1495,6 +1495,7 @@ MonoBehaviour:
     type: 3}
   _ballSpawnLocator: {fileID: 1346408809474296665}
   _displayRequiredLightsAmount: {fileID: 1346408809300877684}
+  _timesPlayed: -1
 --- !u!1 &4955776317137950002
 GameObject:
   m_ObjectHideFlags: 0
