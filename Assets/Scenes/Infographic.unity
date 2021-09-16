@@ -705,7 +705,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1863620664}
         m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
-        m_MethodName: StartGame
+        m_MethodName: GoToMiniGameInfographic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
