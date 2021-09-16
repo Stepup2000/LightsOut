@@ -8,14 +8,14 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private List<GameObject> _minigameElements;
     private List<TrafficLight> trafficLightTargets;
-    [SerializeField] private float maxRange = 5;
+    [SerializeField] private float maxRange = 10;
     [SerializeField] private Text _pressE;
 
     private void Start()
     {
         SwitchMinigame(false);
         trafficLightTargets = FindObjectsOfType<TrafficLight>().ToList();
-        InvokeRepeating("CheckForClosestLight", 1f, 1f);
+        InvokeRepeating("CheckForClosestLight", 0.5f, 0.5f);
     }
 
     public void SwitchMinigame(bool onOrOff)
@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
         if (closestStreetLight != null)
         {
             float distanceToTarget = Vector3.Distance(transform.position, closestStreetLight.transform.position);
-            if (distanceToTarget < maxRange) _pressE.text = "Press E to interact";
+            if (distanceToTarget < maxRange) _pressE.text = "Press E to interact with the streetlight";
             else _pressE.text = "";
         }
     }
