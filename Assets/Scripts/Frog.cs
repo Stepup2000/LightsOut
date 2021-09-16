@@ -29,7 +29,7 @@ public class Frog : MonoBehaviour
         {
             particleSytemAngryFace.gameObject.GetComponent<ParticleSystem>().Stop();
             ParticleSystem particleSystem = particleSytemHearts.gameObject.GetComponent<ParticleSystem>();
-            if (particleSystem.emission.enabled == true) particleSystem.Play();
+            particleSystem.Play();
             Debug.Log("Stop");
         }
 
@@ -37,7 +37,7 @@ public class Frog : MonoBehaviour
         {
             particleSytemHearts.gameObject.GetComponent<ParticleSystem>().Stop();
             ParticleSystem particleSystem = particleSytemAngryFace.gameObject.GetComponent<ParticleSystem>();
-            if (particleSystem.emission.enabled == true) particleSystem.Play();
+            particleSystem.Play();
             Debug.Log("Play");
         }
 
