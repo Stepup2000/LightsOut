@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class MinigameController : MonoBehaviour
 {
-    [SerializeField] private int _lightsRequiredStartingAmount = 30;
-    [SerializeField] private int _lightsRequiredMaximumAmount = 45;
+    [SerializeField] private int _lightsRequiredStartingAmount = 15;
+    [SerializeField] private int _lightsRequiredMaximumAmount = 30;
     [SerializeField] private int _lightsRequiredPenalty = 2;
 
     [SerializeField] private float _ballSpawnCooldown = 1;
@@ -16,6 +16,8 @@ public class MinigameController : MonoBehaviour
     [SerializeField] private GameObject _ballSpawnLocator;
     
     [SerializeField] private Text _displayRequiredLightsAmount;
+
+    public int _timesPlayed = -1;
 
     private int _lightsRequired;
 
@@ -40,7 +42,9 @@ public class MinigameController : MonoBehaviour
 
     private void OnDisable()
     {
-        _lightsRequired = _lightsRequiredMaximumAmount;
+        _lightsRequired = _lightsRequiredStartingAmount;
+        _timesPlayed += 1;
+        _ballSpeed += 0.1f;
     }
 
     private void SpawnBall()
@@ -61,13 +65,16 @@ public class MinigameController : MonoBehaviour
 
     public void AddRequiredLightsPenalty()
     {
-        if ((_lightsRequired + _lightsRequiredPenalty) < _lightsRequiredMaximumAmount)
+        if (_timesPlayed > 0)
         {
-            _lightsRequired += _lightsRequiredPenalty;
-        }
-        else
-        {
-            _lightsRequired = _lightsRequiredMaximumAmount;
+            if ((_lightsRequired + _lightsRequiredPenalty) < _lightsRequiredMaximumAmount)
+            {
+                _lightsRequired += _lightsRequiredPenalty;
+            }
+            else
+            {
+                _lightsRequired = _lightsRequiredMaximumAmount;
+            }
         }
     }
 
