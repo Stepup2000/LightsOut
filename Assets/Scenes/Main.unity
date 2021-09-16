@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.022081286, g: 0.023066899, b: 0.055274617, a: 1}
+  m_IndirectSpecularColor: {r: 0.021831084, g: 0.022930324, b: 0.05490503, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13723,8 +13723,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trafficLightTargets: []
   _lightSpawnCooldown: 90
-  _activeLightsStartingAmount: 9
-  happinessScore: 10
+  _activeLightsStartingAmount: 8
+  happinessScore: 100
 --- !u!1001 &613602230
 PrefabInstance:
   m_ObjectHideFlags: 0
