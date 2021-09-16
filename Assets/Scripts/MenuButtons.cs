@@ -24,6 +24,10 @@ public class MenuButtons : MonoBehaviour
     {
         SceneManager.LoadScene("Infographic", LoadSceneMode.Single);
     }
+    public void GoToMiniGameInfographic()
+    {
+        SceneManager.LoadScene("MiniGameInfographic", LoadSceneMode.Single);
+    }
 
     public void QuitGame()
     {
