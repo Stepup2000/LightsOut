@@ -17,6 +17,8 @@ public class MinigameController : MonoBehaviour
     
     [SerializeField] private Text _displayRequiredLightsAmount;
 
+    public int _timesPlayed = -1;
+
     private int _lightsRequired;
 
     private Vector3 _ballSpawnPoint;
@@ -41,6 +43,8 @@ public class MinigameController : MonoBehaviour
     private void OnDisable()
     {
         _lightsRequired = _lightsRequiredStartingAmount;
+        _timesPlayed += 1;
+        _ballSpeed += 0.1f;
     }
 
     private void SpawnBall()
@@ -61,13 +65,16 @@ public class MinigameController : MonoBehaviour
 
     public void AddRequiredLightsPenalty()
     {
-        if ((_lightsRequired + _lightsRequiredPenalty) < _lightsRequiredMaximumAmount)
+        if (_timesPlayed > 0)
         {
-            _lightsRequired += _lightsRequiredPenalty;
-        }
-        else
-        {
-            _lightsRequired = _lightsRequiredMaximumAmount;
+            if ((_lightsRequired + _lightsRequiredPenalty) < _lightsRequiredMaximumAmount)
+            {
+                _lightsRequired += _lightsRequiredPenalty;
+            }
+            else
+            {
+                _lightsRequired = _lightsRequiredMaximumAmount;
+            }
         }
     }
 

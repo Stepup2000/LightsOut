@@ -20,6 +20,11 @@ public class MenuButtons : MonoBehaviour
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 
+    public void GoToInfographic()
+    {
+        SceneManager.LoadScene("Infographic", LoadSceneMode.Single);
+    }
+
     public void QuitGame()
     {
         Application.Quit();
