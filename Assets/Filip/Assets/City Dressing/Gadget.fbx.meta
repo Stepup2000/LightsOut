@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Controller
     second: {fileID: 2100000, guid: 65fb524b8a7bc774e973da3fa42aa1fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ControllerScreen
+    second: {fileID: 2100000, guid: 92191d07aea3ea240b3016a2de605332, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
